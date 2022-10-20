@@ -1,0 +1,371 @@
+html,
+body {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Inter' !important;
+    background-image: radial-gradient(circle, #4ca1af, #6db1bc, #8bc0ca, #a8d0d7, #c4e0e5);
+}
+
+/* Main Div */
+
+.main {
+    padding: 1rem;
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Heading */
+
+.head {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* Heading Icon */
+
+.head span {
+    color: #5ee45e;
+    font-size: 2rem;
+}
+
+/* To-do Div */
+
+.container {
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 0rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-sizing: border-box;
+}
+
+/* List Area */
+
+.element {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0.5rem;
+    outline: 1px solid #5cc4de;
+    box-sizing: border-box;
+}
+
+/* Input tag */
+
+.inpAdd {
+    text-align: center;
+    height: 50px;
+    width: 93%;
+    border-radius: 0;
+    /* outline: 1px solid #5cc4de; */
+    border: none;
+    padding: 0px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    font-family: 'Inter' !important;
+    /* border: 1px solid black */
+}
+
+
+.inpAdd:focus .element {
+    /* outline: none; */
+    outline: 1px solid #2193b0 !important;
+}
+
+.inpAdd:focus {
+    outline: none;
+}
+
+/* Add Button */
+
+.btnAdd {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #5cc4de;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 0.5;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    /* border: 1px solid white; */
+}
+
+.btnAdd:hover {
+    background-color: white;
+    color: #2193b0;
+    outline: 1px solid #2193b0;
+}
+
+/* Empty Error Message */
+
+.error {
+    /* color: #ff4848; */
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* New List Body */
+
+.listIt {
+    margin: 0.5rem;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 0rem;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid #5cc4de;
+    background-color: white;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.listIt p {
+    margin-left: 0.5rem;
+}
+
+.listIt:hover {
+    outline: 1px solid #2193b0;
+}
+
+/* Done List Body */
+
+.listCan {
+    background: rgba(170, 170, 170, 0.3);
+    outline: none;
+    /* color: #2193b0; */
+    margin: 0.5rem;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 0rem;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(0.99, 0.99);
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.listCan p {
+    margin-left: 0.5rem;
+}
+
+.listCan:hover {
+    background: rgba(150, 150, 150, 0.4);
+}
+
+/* Done List Remove Button Hover */
+
+.listCan .btnRemove:hover {
+    background-color: rgb(81, 81, 81);
+    color: #ff4848;
+    /* border: 1px solid #ae4747; */
+}
+
+/* Button Group Div */
+
+.btnGroup {
+    margin: 0.5rem;
+}
+
+/* Done & Remove Buttons */
+
+.btnDone,
+.btnRemove {
+    padding: 0.5;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* Done Button */
+
+.btnDone {
+    background-color: #4ccf4c;
+    margin-right: 0.5rem;
+}
+
+.btnDone:hover {
+    background-color: white;
+    color: #4ccf4c;
+    border: 1px solid #4ccf4c;
+}
+
+/* Remove Button */
+
+.btnRemove {
+    background-color: #ff4848;
+}
+
+.listIt .btnRemove:hover {
+    background-color: white;
+    color: #ff4848;
+    border: 1px solid #ff4848;
+}
+
+/* MediaQuery for Tablet */
+
+@media screen and (max-width:1024px) {
+
+    .head {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .head span {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .element {
+        margin: 0.3rem;
+        height: 35px;
+    }
+
+    .inpAdd,
+    .btnAdd {
+
+        font-size: 0.8rem;
+    }
+
+    .inpAdd {
+        height: 35px;
+    }
+
+    .btnAdd {
+        padding: 0.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .error {
+        font-size: 1rem;
+    }
+
+    .listIt,
+    .listCan {
+        height: 35px;
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .btnGroup {
+        margin: 0.5rem;
+    }
+
+    .btnDone,
+    .btnRemove {
+        padding: 0.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.6rem;
+    }
+
+    .btnDone {
+        margin-right: 0.5rem;
+    }
+}
+
+/* MediaQuery for Mobile */
+
+@media screen and (max-width:425px) {
+    .head {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .head span {
+        font-size: 1rem;
+    }
+
+    .main {
+        margin: 0.5rem;
+    }
+
+    .container {
+
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .element {
+        margin: 0.3rem;
+        height: 35px;
+    }
+
+    .error {
+        font-size: 0.9rem;
+    }
+
+    .inpAdd,
+    .btnAdd,
+    .listIt,
+    .listCan {
+        font-size: 0.7rem;
+    }
+
+    .listIt p,
+    .listCan p {
+
+        margin-left: 0.3rem;
+    }
+
+    .btnAdd {
+        padding: 0.3rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0.3rem;
+        font-size: 0.6rem;
+    }
+
+    .listIt,
+    .listCan {
+        padding: 0rem;
+        margin: 0.3rem;
+    }
+
+    .btnGroup {
+        margin: 0.3rem;
+    }
+
+    .btnDone,
+    .btnRemove {
+        padding: 0.3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.6rem;
+    }
+
+    .btnDone {
+        margin-right: 0.3rem;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4dce9aeb40.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+
+    <!-- Main Div start -->
+
+    <div class="main">
+
+        <!-- Heading start -->
+
+        <h1 class="head">To-Do List <span><i class="fa-sharp fa-solid fa-square-check"></i> </span></h1>
+
+        <!-- Heading end -->
+
+        <!-- To-do Div start -->
+
+        <div class="container" id="mainSc">
+
+            <!-- List Area start -->
+
+            <div class="element">
+
+                <!-- Input &  Add Button start -->
+
+                <input type="text" id="inp_add" class="inpAdd" placeholder="Enter Your Task" onclick="fun_enter()">
+                <button id="btn_add" class="btnAdd"><i class="fa-solid fa-plus"></i></button>
+
+                <!-- Input &  Add Button end -->
+
+            </div>
+
+            <!-- List Area start -->
+
+        </div>
+
+        <!-- To-do Div end -->
+
+        <!-- Task Area start -->
+
+        <div class="taskArea" id="task_area">
+
+            <!-- Empty Error message start -->
+
+            <p id="error" style="display:none" class="error">Please enter a task first!</p>
+
+            <!-- Empty Error message start -->
+
+        </div>
+
+        <!-- Task Area start -->
+
+    </div>
+
+    <!-- Main Div end -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
